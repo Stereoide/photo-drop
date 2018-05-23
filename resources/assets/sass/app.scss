@@ -1,0 +1,85 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+BODY {
+  padding: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #636b6f;
+  height: 100vh;
+}
+
+body:after{
+  content:"";
+  position:fixed; /* stretch a fixed position to the whole screen */
+  top:0;
+  height:100vh; /* fix for mobile browser address bar appearing disappearing */
+  left:0;
+  right:0;
+  z-index:-1; /* needed to keep in the background */
+  background-color: #0079a4;
+  background-image: url('../img/leuchtturm.jpg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+H1 {
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: 100;
+  color: #ad515c;
+}
+
+.card {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-header {
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: 100;
+  color: #ad515c;
+  font-size: 2em;
+  background-color: transparent;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Login */
+
+.card.login .card-body .form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* Dropzone */
+
+.dropzone {
+  border: dashed 2px rgba(0, 0, 255, 0.1) !important;
+}
+
+/* Photos */
+
+.photo.thumbnail {
+  float: left;
+  margin: 0 1em 1em 0;
+}
